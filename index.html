@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katik</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <script src="script.js"></script>
+
+    <div class="container">
+      <div class="header">
+        <h1>Katik</h1>
+        <h3>Kalkulator Matematik</h3>
+      </div>
+      <div class="content">
+        <h2>Welcome to Katik</h2>
+        <br />
+        <p>Hai Sobat, Selamat datang di Katik</p>
+        <p>
+          Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas
+          dan keliling bangun datar
+        </p>
+        <br />
+        <h4>Persegi</h4>
+        <br />
+        <a href="#luasPersegi">P.Luas</a>
+        <a href="#kPersegi">P.Keliling</a>
+        <div class="hitung-luas-h">
+          <br />
+          <h4 id="luasPersegi">Luas Persegi</h4>
+          <div class="hitung-luas-m">
+            <img src="persegi.jpg" alt="" />
+            <p>Rumus Luas Persegi yaitu :</p>
+            <br />
+            <p id="rumus-l">L = S x S</p>
+            <p>Di mana:</p>
+            <p>L =Luas</p>
+            <p>S = Sisi</p>
+            <h2>Hitung Luas Persegi</h2>
+           
+            <form class="sisi-luas">
+                <input type="text" id="sisi" placeholder="Nilai Sisi" autocomplete="off">
+                <br>
+                <p>L = S x S</p>
+                <p>L = <input type="text" id="sisi1" autocomplete="off"> x <input type="text" id="sisi2" autocomplete="off"></p>
+                <p>Luas : <input type="text" id="output_luas" autocomplete="off"></p>
+                <input type="button" value="Hitung" onclick="hitungLuas()">
+            </form>
+            <br />
+          <h4 id="kPersegi">Keliling Persegi</h4>
+          <div class="hitung-keliling-m">
+            <img src="persegi.jpg" alt="" />
+            <p>Rumus Luas Persegi yaitu :</p>
+            <br />
+            <p id="rumus-l">K = 4 x S</p>
+            <p>Di mana:</p>
+            <p>L = Keliling<p>
+            <p>S = Sisi</p>
+            <h2>Hitung Keliling Persegi</h2>
+            <form class="sisi-keliling-m">
+                <input type="text" id="sisi-keliling-i" placeholder="Nilai Sisi" autocomplete="off">
+                <br>
+                <p>K = 4 x S</p>
+                <p>K = 4 x <input type="text" id="sisi-keliling" autocomplete="off"></p>
+                <p>Keliling : <input type="text" id="output_keliling" autocomplete="off"></p>
+                <input type="button" value="Hitung" onclick="hitungKeliling()">
+            </form>
+          </div>
+          <div class="hitung-luas-h">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
